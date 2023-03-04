@@ -61,6 +61,8 @@ namespace Test
     }
 }
 ```
+실행 결과 : `xopsplayer`
+
 ---
 
 ### 상수
