@@ -25,8 +25,8 @@
 VSCode를 사용하시는 경우 `.csproj` 파일을 오픈하신 후, `</PropertyGroup>` 태그 아래에 위 코드를 추가합니다.
 
 Visual Studio IDE를 사용하시는 경우, 솔루션 탐색기에서 DLL 파일을 참조 추가해주세요.
-
-
+<br>
+<br>
 ```csharp
 using XOPS;           // dll 참조 추가 후, XOPS 네임스페이스를 포함한다.
 using System.Text;
