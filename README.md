@@ -16,13 +16,13 @@
 ### 사용 방법
 ```csproj
 <ItemGroup>
-<Reference Include="Configuration.dll">
-  <HintPath>Configuration.dll</HintPath>
-  <SpecificVersion>false</SpecificVersion>
-</Reference>
+  <Reference Include="Configuration.dll">
+    <HintPath>Configuration.dll</HintPath>
+    <SpecificVersion>false</SpecificVersion>
+  </Reference>
 </ItemGroup>
 ```
-VSCode를 사용하시는 경우 `.csproj` 파일을 오픈하신 후, `</PropertyGroup>` 태그 아래에 위 코드를 추가합니다.
+VSCode를 사용하시는 경우 `.csproj` 파일을 오픈하신 후, `</PropertyGroup>` 태그 아래에 위 코드를 추가합니다. DLL 파일은 `program.cs` 등 메인 `.cs` 파일이 있는 곳에 첨부합니다.
 
 Visual Studio IDE를 사용하시는 경우, 솔루션 탐색기에서 DLL 파일을 참조 추가해주세요.
 <br>
