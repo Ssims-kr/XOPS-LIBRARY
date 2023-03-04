@@ -301,11 +301,16 @@ namespace XOPS {
                     bw.Write((Boolean)AnotherGunsightFlag);
 
                     // 플레이어 이름
-                    char[] temp = PlayerName.ToCharArray(0, MAX_PLAYER_NAME);
-                    if (temp[MAX_PLAYER_NAME - 1] != '\0') {
-                        temp[MAX_PLAYER_NAME - 1] = '\0';
+                    char[] temp = PlayerName.ToCharArray();
+                    if (temp.Length >= MAX_PLAYER_NAME) {
+                        if (temp[MAX_PLAYER_NAME - 1] != '\0') {
+                            temp[MAX_PLAYER_NAME - 1] = '\0';
+                        }
+                        
+                        bw.Write(temp, 0, MAX_PLAYER_NAME);
+                    } else {
+                        bw.Write(temp);
                     }
-                    bw.Write(temp);
                 }
             }
  
